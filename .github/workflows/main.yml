@@ -1,4 +1,4 @@
-- name: Maven release
+-name: Maven release
   uses: qcastel/github-actions-maven-release@v1.0.3
   with:
     # Filter the branch to execute the release on
