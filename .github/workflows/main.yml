@@ -1,0 +1,27 @@
+- name: Maven release
+  uses: qcastel/github-actions-maven-release@v1.0.3
+  with:
+    # Filter the branch to execute the release on
+    release-branch-name: # optional
+    # Enable gpg signing
+    gpg-enabled: # optional
+    # The GPG key ID
+    gpg-key-id: # optional
+    # The GPG key
+    gpg-key: # optional
+    # The maven local repository path
+    maven-local-repo-path: # optional, default is $M2_HOME/repository
+    # Maven server repository id to push the artefacts to
+    maven-repo-server-id: 
+    # Maven server repository username
+    maven-repo-server-username: 
+    # Maven server repository password
+    maven-repo-server-password: 
+    # The maven arguments for the release
+    maven-args: # optional, default is 
+    # The git user name for commiting the release
+    git-release-bot-name: 
+    # The git user email for commiting the release
+    git-release-bot-email: 
+    # Github access token. https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
+    access-token: 
